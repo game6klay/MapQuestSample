@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mapquest.mapping.maps.MapView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mapquestMapView"
+    app:mapquest_app_key="kHnW9DZmvxqSwIGg9FZhUj3tm5kCbF69" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etSourcePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="@string/tv_starting_point"
+            android:textColorHint="@color/mapbox_blue"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/etDestinationPoint"
+            android:layout_toStartOf="@+id/etDestinationPoint"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+        <EditText
+            android:id="@+id/etDestinationPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etSourcePoint"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="@string/tv_ending_point"
+            android:textColorHint="@color/mapbox_blue"
+            android:background="#ffffff"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etDestinationPoint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="111dp"
+            android:text="Search" />
+
+    </RelativeLayout>
+
+
+</com.mapquest.mapping.maps.MapView>
+
+
+

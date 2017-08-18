@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MapQuestSample</string>
+    <string name="tv_starting_point">"Start from"</string>
+    <string name="tv_ending_point">"End at"</string>
+    <string name="title_activity_direction_api">DirectionAPIActivity</string>
+</resources>
